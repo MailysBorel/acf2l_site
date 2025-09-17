@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASUS TUF Gaming A16 Advantage Edition 2023 | ASUS France</title>
+    <style>
+        :root {
+            --primary-color: #ff0000;
+            --secondary-color: #000000;
+            --accent-color: #ce0000;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--secondary-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: var(--primary-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23222"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23fff" font-size="12">Image produit</text></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        /* Specifications */
+        .specs {
+            padding: 80px 0;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        
+        .specs-table th, .specs-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .specs-table th {
+            background-color: var(--light-bg);
+            font-weight: bold;
+        }
+        
+        /* Gallery */
+        .gallery {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            height: 250px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">ASUS<span>TUF</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Caractéristiques</a></li>
+                    <li><a href="#">Spécifications</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>TUF Gaming A16 Advantage Edition 2023</h1>
+            <p>Découvrez la puissance brute alliée à une efficacité énergétique exceptionnelle pour des performances gaming incomparables.</p>
+            <a href="#" class="btn">Voir les spécifications</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Caractéristiques principales</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Processeur AMD Ryzen™</h3>
+                    <p>Equipé des derniers processeurs AMD Ryzen™ pour des performances exceptionnelles en jeu et en multitâche.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>GPU AMD Radeon™</h3>
+                    <p>Graphismes AMD Radeon™ dédiés pour une expérience gaming immersive avec des images fluides et réalistes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>Écran QHD 165Hz</h3>
+                    <p>Ecran haute résolution avec un taux de rafraîchissement de 165Hz pour des mouvements fluides et précis.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <h3>Autonomie prolongée</h3>
+                    <p>Batterie haute capacité offrant jusqu'à 10 heures d'autonomie pour une utilisation prolongée sans fil.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">❄️</div>
+                    <h3>Système de refroidissement</h3>
+                    <p>Système de refroidissement amélioré avec technologie Anti-Dust pour des performances durables.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>Clavier rétroéclairé</h3>
+                    <p>Clavier gaming rétroéclairé RGB avec une conception résistante aux éclaboussures pour des sessions intensives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specs">
+        <div class="container">
+            <h2 class="section-title">Spécifications techniques</h2>
+            <table class="specs-table">
+                <tr>
+                    <th>Processeur</th>
+                    <td>AMD Ryzen™ 7 7735HS Mobile Processor</td>
+                </tr>
+                <tr>
+                    <th>Carte graphique</th>
+                    <td>AMD Radeon™ RX 7600S GPU</td>
+                </tr>
+                <tr>
+                    <th>Affichage</th>
+                    <td>16" QHD+ (2560 x 1600) 16:10, 165Hz, 100% DCI-P3</td>
+                </tr>
+                <tr>
+                    <th>Mémoire</th>
+                    <td>16GB DDR5 4800MHz</td>
+                </tr>
+                <tr>
+                    <th>Stockage</th>
+                    <td>512GB PCIe® 4.0 NVMe™ M.2 SSD</td>
+                </tr>
+                <tr>
+                    <th>Système d'exploitation</th>
+                    <td>Windows 11 Home</td>
+                </tr>
+                <tr>
+                    <th>Clavier</th>
+                    <td>Clavier gaming rétroéclairé RGB</td>
+                </tr>
+                <tr>
+                    <th>Connectivité</th>
+                    <td>Wi-Fi 6, Bluetooth 5.2</td>
+                </tr>
+                <tr>
+                    <th>Ports</th>
+                    <td>USB 3.2 Type-C, USB 3.2 Type-A, HDMI 2.1, RJ45, prise audio</td>
+                </tr>
+                <tr>
+                    <th>Batterie</th>
+                    <td>90Wh, jusqu'à 10 heures d'autonomie</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="../image/b.jpg"  alt="Wat Phra Kaew">  </div>
+                <div class="gallery-item">Image produit 2</div>
+                <div class="gallery-item">Image produit 3</div>
+                <div class="gallery-item">Image produit 4</div>
+                <div class="gallery-item">Image produit 5</div>
+                <div class="gallery-item">Image produit 6</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Produits</h3>
+                    <ul>
+                        <li><a href="#">Ordinateurs portables</a></li>
+                        <li><a href="#">Composants</a></li>
+                        <li><a href="#">Moniteurs</a></li>
+                        <li><a href="#">Périphériques</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Téléchargements</a></li>
+                        <li><a href="#">Assistance</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Garantie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>À propos d'ASUS</h3>
+                    <ul>
+                        <li><a href="#">Notre histoire</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="#">Responsabilité sociale</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Où acheter</h3>
+                    <ul>
+                        <li><a href="#">Revendeurs</a></li>
+                        <li><a href="#">Boutique en ligne</a></li>
+                        <li><a href="#">Où nous trouver</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ASUS France. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
