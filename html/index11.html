@@ -6,6 +6,17 @@
     <title>Aéro-Club Frotey-lès-Lures</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Bootstrap utility classes remplacements */
+        .logo-rounded {
+            border-radius: 1.5rem;
+        }
+        .btn-rounded-medium {
+            border-radius: 1.5rem !important;
+        }
+        .btn-custom-padding {
+            padding-top: 0.8em !important;
+            padding-bottom: 0.8em !important;
+        }
         .navbar {
             background: transparent !important;
             box-shadow: none;
@@ -42,9 +53,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             color: #fff;
             background: rgba(0,0,0,0.3);
+            padding-top: 10vh;
         }
         .hero-content h1 {
             font-size: 3rem;
@@ -53,24 +65,14 @@
         .hero-content p {
             font-size: 1.3rem;
         }
-        .hero-content .btn {
-            font-size: 1.3rem;
-            padding: 0.7em 2.5em;
-            background: #000;
-            border: none;
-        }
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-        }
+
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../image/logo.png" alt="ACF2L Logo" style="height:40px;"></a>
+            <a class="navbar-brand" href="#"><img src="../image/logo.png" alt="ACF2L Logo" style="height:75px;" class="logo-rounded"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -105,10 +107,89 @@
         <div class="hero-content text-center">
             <h1>Aéro - Club<br>Frotey - Lès - Lures</h1>
             <p>Bienvenue chez ACF2L l'association qui vous offre la chance de pratiquer l'aviation légère dans le plus bel environnement.</p>
-            <a href="#activites" class="btn btn-light mt-3">Découvrir</a>
+            <a href="#activites" class="btn btn-dark text-white btn-lg mt-3 text-center btn-custom-padding btn-rounded-medium">Découvrir</a>
         </div>
     </section>
 
+        <!-- Nos Activités Section -->
+        <section id="activites" style="background:#111; color:#fff; padding: 60px 0 40px 0;">
+            <div class="container">
+                <h2 style="color:#ffd700; font-weight:bold; font-size:2.5rem;">Nos Activités</h2>
+                <div style="height:6px; width:120px; background:#ffd700; margin-bottom:30px;"></div>
+                <div class="row mb-4">
+                    <div class="col-md-7">
+                        <p>L’aéro-club est une Association Loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM (Fédération Française d’ULM).<br>
+                        Association enregistrée n°04674 - - Agrément n° AS70986858<br>
+                        Le siège social demeure 62, Avenue de la République, 70200 Lure</p>
+                        <p>L’aéro-club assure la formation de pilotes et d’instructeurs. Et propose également des baptêmes de l’air.</p>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-end align-items-start">
+                        <img src="../image/b.jpg" alt="ULM" style="max-width:320px; border:5px solid #ffd700; border-radius: 1.5rem; margin-bottom:20px; background:#fff;">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-5 d-flex justify-content-start align-items-start">
+                        <img src="../image/background.png" alt="ULM" style="max-width:320px; border:5px solid #ffd700; border-radius: 1.5rem; margin-bottom:20px; background:#fff;">
+                    </div>
+                    <div class="col-md-7">
+                        <b>Pour cela, il assure les prestations complémentaires suivantes :</b>
+                        <ul style="margin-top:10px;">
+                            <li>maintenance des ULM moteur, structure…</li>
+                            <li>montage des ULM et de tout instrument de navigation : Compas, radio, transpondeur…</li>
+                            <li>un service de restauration rapide.</li>
+                            <li>un hébergement en proposant trois studios et six chambres pour les élèves stagiaires.</li>
+                            <li>location d’emplacement ULM dans des hangars pour les particuliers.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-end mt-5">
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-3">
+                        <div class="d-flex justify-content-center" style="width:100%;">
+                            <div style="background:#fff; border-radius:50%; width:90px; height:90px; display:flex; align-items:center; justify-content:center; margin-bottom:10px;">
+                                <img src="https://acf2l.alwaysdata.net/images/a.png" alt="pilotage" style="width:54px; height:54px; object-fit:contain; display:block; margin:auto;">
+                            </div>
+                        </div>
+                        <div style="background:#ffd700; color:#222; border-radius:1rem; padding:10px 18px; font-weight:bold; font-size:1.1rem; min-width:220px; text-align:center;">Cours de pilotage<br><span style="font-size:0.9rem; font-weight:normal;">Apprenez à piloter grâce à nos professionnels</span></div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-3">
+                        <div class="d-flex justify-content-center" style="width:100%;">
+                            <div style="background:#fff; border-radius:50%; width:90px; height:90px; display:flex; align-items:center; justify-content:center; margin-bottom:10px;">
+                                <img src="https://acf2l.alwaysdata.net/images/meal.png" alt="Restauration" style="width:54px; height:54px; object-fit:contain; display:block; margin:auto;">
+                            </div>
+                        </div>
+                        <div style="background:#ffd700; color:#222; border-radius:1rem; padding:10px 18px; font-weight:bold; font-size:1.1rem; min-width:220px; text-align:center;">Service de restauration<br><span style="font-size:0.9rem; font-weight:normal;">L’ACF2L vous propose un service de restauration rapide.</span></div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-3">
+                        <div class="d-flex justify-content-center" style="width:100%;">
+                            <div style="background:#fff; border-radius:50%; width:90px; height:90px; display:flex; align-items:center; justify-content:center; margin-bottom:10px;">
+                                <img src="https://acf2l.alwaysdata.net/images/hotelBed.png" alt="Hébergement" style="width:54px; height:54px; object-fit:contain; display:block; margin:auto;">
+                            </div>
+                        </div>
+                        <div style="background:#ffd700; color:#222; border-radius:1rem; padding:10px 18px; font-weight:bold; font-size:1.1rem; min-width:220px; text-align:center;">Hébergement<br><span style="font-size:0.9rem; font-weight:normal;">Nous vous proposons 4 chambres pour les élèves stagiaires chez ACF2L</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</script>
+<script>
+// Masquer la navbar lors du scroll vers le bas, l'afficher lors du scroll vers le haut
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+        // Scroll vers le bas
+        navbar.style.transform = 'translateY(-100%)';
+        navbar.style.transition = 'transform 0.3s';
+    } else {
+        // Scroll vers le haut
+        navbar.style.transform = 'translateY(0)';
+        navbar.style.transition = 'transform 0.3s';
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+</script>
 </body>
 </html>
