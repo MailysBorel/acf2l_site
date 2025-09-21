@@ -69,6 +69,34 @@
         }
 
     </style>
+    <style>
+        /* Bouton retour en haut */
+        #backToTopBtn {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 9999;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #FFA800;
+            color: #111;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        #backToTopBtn.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -378,4 +406,25 @@ window.addEventListener('scroll', function() {
 });
 </script>
 </body>
+    <!-- Bouton retour en haut -->
+    <button id="backToTopBtn" aria-label="Remonter en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.75.75 0 0 0 .75-.75V4.81l2.72 2.72a.75.75 0 1 0 1.06-1.06l-4-4a.75.75 0 0 0-1.06 0l-4 4a.75.75 0 1 0 1.06 1.06L7.25 4.81v6.44A.75.75 0 0 0 8 12z"/>
+        </svg>
+    </button>
+    <script>
+
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
 </html>
